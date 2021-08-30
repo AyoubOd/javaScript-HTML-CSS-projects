@@ -1,0 +1,61 @@
+ul {
+  margin: auto;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+ul li:first-child {
+  background-color: rgb(253, 62, 62);
+}
+
+ul li:nth-child(2) {
+  background-color: purple;
+}
+
+ul li:last-child {
+  background-color: black;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  color: #fff;
+}
+
+h1 {
+  color: rgb(253, 62, 62);
+  padding: 10px;
+}
+
+p {
+  background-color: rgb(253, 62, 62);
+  padding: 10px;
+}
+
+.red .container h1 {
+  color: rgb(253, 62, 62);
+}
+.red .container p {
+  background-color: rgb(253, 62, 62);
+}
+
+.purple .container h1 {
+  color: purple;
+}
+.purple .container p {
+  background-color: purple;
+}
+
+.black .container h1 {
+  color: #000;
+}
+.black .container p {
+  background-color: #000;
+}

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Arial;
+}
+
+.slider-container {
+  width: 800px;
+  height: 250px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.slider-container .slider-number {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  opacity: 0.6;
+}
+
+.slider-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.slider-container img.active {
+  opacity: 1;
+}
+
+.slider-controls {
+  width: 800px;
+  margin: 5px auto;
+}
+
+.slider-controls .previous,
+.slider-controls .next {
+  width: 20%;
+  background-color: rgb(49, 172, 131);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-controls .previous.disabled,
+.slider-controls .next.disabled {
+  background-color: rgb(49, 172, 131, 0.5);
+  cursor: no-drop;
+}
+
+.slider-controls .indicators {
+  width: 58.75%;
+  display: inline-block;
+}
+
+.slider-controls .indicators ul {
+  text-align: center;
+}
+
+.slider-controls .indicators ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.slider-controls .indicators ul li.active {
+  background-color: rgb(49, 172, 131);
+}
