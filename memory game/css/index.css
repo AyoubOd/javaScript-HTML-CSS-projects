@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.splash-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 11;
+  background-color: #2195f3d7;
+}
+
+.splash-screen .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 30px;
+  background-color: #f44336;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.container {
+  width: 55%;
+  margin: 10px auto;
+  border: 2px solid #777;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.container span:first-child {
+  float: left;
+}
+.container span:last-child {
+  float: right;
+}
+
+/* start game-blocks-container */
+.game-blocks-container {
+  width: 70%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 130px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-blocks-container .game-block {
+  height: 130px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.game-blocks-container.no-clicking {
+  pointer-events: none;
+}
+
+.game-blocks-container .game-block .face {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #607d8b;
+}
+
+.game-blocks-container .game-block .back {
+  transform: rotateY(180deg);
+}
+
+.game-blocks-container .game-block .front {
+  background-color: #777;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  border: 3px solid rgb(85, 128, 246);
+}
+.game-blocks-container .game-block.flipped,
+.game-blocks-container .game-block.has-match {
+  transform: rotateY(-180deg);
+}
