@@ -1,0 +1,1 @@
+this is another file of athe same project (slider) but this one is more optimized than the firsst one.
