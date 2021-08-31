@@ -1,1 +1,1 @@
-this is another file of athe same project (slider) but this one is more optimized than the firsst one.
+this is another folder of the same project (slider) but this one is more optimized than the first one.
