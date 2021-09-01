@@ -76,5 +76,4 @@ function ContainerTask() {
 //start main code
 addButton.addEventListener("click", addTask);
 
-// for (let i = 0; i < deleteButtons.length; i++) {
-// }
+
